@@ -1,0 +1,54 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  font-weight: 500;
+}
+
+.prevButton,
+.nextButton {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.prevButton:hover:not(:disabled),
+.nextButton:hover:not(:disabled) {
+  background-color: #5a5a5a;
+}
+
+.saveButton {
+  background-color: #4a9eff;
+  color: white;
+  min-width: 140px;
+}
+
+.saveButton:hover:not(:disabled) {
+  background-color: #3a8eef;
+}
+
+.resetButton {
+  background-color: #ff6b6b;
+  color: white;
+  min-width: 140px;
+}
+
+.resetButton:hover {
+  background-color: #ee5a5a;
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
